@@ -10,7 +10,7 @@ int main()
 
 {
 
-sleep(500);
+Sleep(500);
   POINT P;
 
   GetCursorPos(&P);
@@ -33,4 +33,3 @@ sleep(500);
   }
 
 }
-
