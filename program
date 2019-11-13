@@ -1,0 +1,36 @@
+#include<iostream>
+
+#include<windows.h>
+
+#include<winuser.h>
+
+using namespace std;
+
+int main()
+
+{
+
+sleep(500);
+  POINT P;
+
+  GetCursorPos(&P);
+
+  int x1=P.x;
+
+  int y1=P.y;
+
+
+  while(true)
+
+  {
+
+    Sleep(10);
+
+    mouse_event(MOUSEEVENTF_LEFTDOWN,x1,y1,0,0);
+
+    mouse_event(MOUSEEVENTF_LEFTUP,x1,y1,0,0);
+
+  }
+
+}
+
